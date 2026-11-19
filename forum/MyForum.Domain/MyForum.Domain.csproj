@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\YourCompany.OLTP.RecordsManagement\YourCompany.OLTP.RecordsManagement.csproj" />
+    <ProjectReference Include="..\..\src\YourCompany.OLTP.StateOwnership\YourCompany.OLTP.StateOwnership.csproj" />
+  </ItemGroup>
+
+</Project>

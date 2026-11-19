@@ -10,7 +10,8 @@ namespace YourCompany.Configuration
     public static class EnvironmentConventions
     {
         public const string DevEnv = "Development";
-        public const string YourCompanyAssemblyPrefix = "YourCompany.";
+        //public const string YourCompanyAssemblyPrefix = "YourCompany.";
+        public const string YourCompanyAssemblyPrefix = "MyForum.";
         public const string YourCompanyConfigurationSectionName = nameof(YourCompany);
         internal const string ToBeConfiguredOnlyEnvironmentVariablesPrefix = YourCompanyEnvVarPrefix + "CONFIG_";
         private const string YourCompanyEnvVarPrefix = "YOURCOMPANY_";

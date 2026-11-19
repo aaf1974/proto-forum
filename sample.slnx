@@ -9,6 +9,13 @@
     <Project Path="examples/efcore-migrations/src/YourCompany.EFCore.Sqlite.CustomConfigurationMigrations/YourCompany.EFCore.Sqlite.CustomConfigurationMigrations.csproj" />
     <Project Path="examples/efcore-migrations/src/YourCompany.EFCore.Sqlite.YourCompanyDbContextConfigurationMigrations/YourCompany.EFCore.Sqlite.YourCompanyDbContextConfigurationMigrations.csproj" />
   </Folder>
+  <Folder Name="/forum/">
+    <Project Path="forum/MyForum.Api/MyForum.Api.csproj" Id="a9a74ab7-cad8-4431-9457-69047f142305" />
+    <Project Path="forum/MyForum.Domain/MyForum.Domain.csproj" Id="378c9e5c-f48f-4550-9dc6-0bca2d97b5b5" />
+    <Project Path="forum/MyForum.Infrastructure/MyForum.Infrastructure.csproj" Id="818f419e-6c4b-41d7-ab16-33f149ccdc62" />
+    <Project Path="forum/MyForum.Persistence.PostgreSQL/MyForum.Persistence.PostgreSQL.csproj" Id="badc445c-79a3-499a-b4bf-e4694261bb3b" />
+    <Project Path="forum/MyForum.Persistence/MyForum.Persistence.csproj" Id="660f592f-de2f-4713-a939-c3dd7dbf4211" />
+  </Folder>
   <Folder Name="/src/">
     <Project Path="src/YourCompany.CompilerServices/YourCompany.CompilerServices.csproj" />
     <Project Path="src/YourCompany.Configuration/YourCompany.Configuration.csproj" />

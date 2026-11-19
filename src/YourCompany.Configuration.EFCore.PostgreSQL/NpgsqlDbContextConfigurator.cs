@@ -16,8 +16,9 @@ namespace YourCompany.Configuration.EFCore.PostgreSQL
         // fails to find the right *Snapshot.cs file and overwrites the first it finds alphabetically 😢
         // We use the split assembly approach for demo purposes, since in practice it shouldn't be a problem with a single context.
         // But keep in mind there's also an option to extract the assembly name to the config skipped for brevity.
-        private const string MigrationAssemblyNameFormatFromConfigurationType
-            = $"{EnvironmentConventions.YourCompanyAssemblyPrefix}{nameof(EFCore)}.{nameof(PostgreSQL)}.{{0}}{nameof(Migrations)}";
+        //private const string MigrationAssemblyNameFormatFromConfigurationType
+        //    = $"{EnvironmentConventions.YourCompanyAssemblyPrefix}{nameof(EFCore)}.{nameof(PostgreSQL)}.{{0}}{nameof(Migrations)}";
+        private const string MigrationAssemblyNameFormatFromConfigurationType  = "MyForum.Persistence.PostgreSQL";
 
         private PrefixedObjectNamesShortener _prefixedObjectNamesShortener;
 
