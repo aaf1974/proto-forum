@@ -1,4 +1,4 @@
-﻿using YourCompany.OLTP.RecordsManagement.Persistence.Linq.EFCore;
+﻿using YourCompany.OLTP.RecordsManagement.DI.EFCore;
 
 namespace MyForum.Persistence
 {

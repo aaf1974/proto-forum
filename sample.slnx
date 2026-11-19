@@ -16,6 +16,9 @@
     <Project Path="forum/MyForum.Persistence.PostgreSQL/MyForum.Persistence.PostgreSQL.csproj" Id="badc445c-79a3-499a-b4bf-e4694261bb3b" />
     <Project Path="forum/MyForum.Persistence/MyForum.Persistence.csproj" Id="660f592f-de2f-4713-a939-c3dd7dbf4211" />
   </Folder>
+  <Folder Name="/forum/docs/">
+    <File Path="forum/docs/read-me.md" />
+  </Folder>
   <Folder Name="/src/">
     <Project Path="src/YourCompany.CompilerServices/YourCompany.CompilerServices.csproj" />
     <Project Path="src/YourCompany.Configuration/YourCompany.Configuration.csproj" />

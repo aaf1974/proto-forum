@@ -5,24 +5,31 @@
     /// Наследуется от <see cref="EventArgs"/> для передачи внутрь транзакционного коллбэка агрегата.
     /// </summary>
     /// <param name="AuthorPublicId">Публичный идентификатор автора, создающего пост.</param>
-    public sealed class CreatePostDraftUseCase(Guid AuthorPublicId) : EventArgs
+    public sealed class CreatePostDraftUseCase(Guid AuthorPublicId, Guid? CommunityPublicId, string? Title, string ContentJson, PostFlags Flags, DateTimeOffset NowUtc) : EventArgs
     {
         /// <summary>
         /// Публичный идентификатор автора, создающего пост.
         /// </summary>
         public Guid AuthorPublicId { get; } = AuthorPublicId;
+        public Guid? CommunityPublicId { get; internal set; }
+        public string? Title { get; internal set; }
+        public string ContentJson { get; internal set; }
+        public PostFlags Flags { get; internal set; }
+        public DateTimeOffset NowUtc { get; internal set; }
     }
 
     /// <summary>
     /// Параметры сценария публикации поста из черновика.
     /// </summary>
     /// <param name="ActorPublicId">Публичный идентификатор пользователя, инициировавшего публикацию.</param>
-    public sealed class PublishPostUseCase(Guid ActorPublicId) : EventArgs
+    public sealed class PublishPostUseCase(Guid ActorPublicId, bool RequiresPreModeration, DateTimeOffset? NowUtc = null) : EventArgs
     {
         /// <summary>
         /// Публичный идентификатор пользователя, инициировавшего публикацию.
         /// </summary>
         public Guid ActorPublicId { get; } = ActorPublicId;
+        public bool RequiresPreModeration { get; internal set; }
+        public DateTimeOffset? NowUtc { get; internal set; }
     }
 
     /// <summary>
